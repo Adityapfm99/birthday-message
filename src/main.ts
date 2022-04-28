@@ -2,6 +2,7 @@ import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { SwaggerModule } from '@nestjs/swagger/dist/swagger-module';
 import { DocumentBuilder } from '@nestjs/swagger/dist';
+import job from './jobs/jobs';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
@@ -14,6 +15,8 @@ async function bootstrap() {
   const port = process.env.PORT || 3000;
   await app.listen(port, () => {
     console.log(`===== Server listening on port ${port} =====`);
+    console.log("Press CTRL-C to stop\n");
+    job.cekBirthday();
   });
 
 }

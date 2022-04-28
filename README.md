@@ -25,8 +25,8 @@
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
+ 
+## Installation 
 
 ```bash
 $ yarn
@@ -36,6 +36,18 @@ $ yarn
 
 ```bash
 # watch mode
-$ yarn start:dev
+$ yarn start
 ```
 # birthday-message
+
+## Documentation Swagger
+
+```bash
+$ http://localhost:3000/docs/
+```
+
+## Health Check Endpoint
+
+```bash
+$ http://localhost:3000/check
+```
