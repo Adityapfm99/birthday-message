@@ -53,7 +53,7 @@ export class CronService {
         console.error(e);
       });
 
-      req.write(datas);
+      req.write(`Hey, ${datas} it’s your birthday`);
       req.end();
       console.log(
         '###========= JOB COMPLETE ' +
